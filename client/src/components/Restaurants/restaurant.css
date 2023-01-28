@@ -1,0 +1,43 @@
+.rest {
+  display: flex;
+  flex-wrap: wrap; /* wrap items if they exceed the width /
+    justify-content: space-between; / add space between items /
+    align-items: center; / center items vertically */
+}
+
+.restem {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 30px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.restem:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.restImg {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  filter: brightness(80%);
+}
+
+.restTitles {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.restTitles h1 {
+  margin-bottom: 10px; /* add space between title and description */
+}

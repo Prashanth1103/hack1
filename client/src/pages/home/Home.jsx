@@ -13,6 +13,7 @@ const Home = () => {
       <Navbar />
       <Header />
       <div className="homeContainer">
+        <h1 className="homeTitle"> Our beloved Businesses</h1>
         <Featured />
         <h1 className="homeTitle">Customize your travel by facilities </h1>
         <PropertyList />

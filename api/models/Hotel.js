@@ -18,14 +18,12 @@ const HotelSchema = new mongoose.Schema({
   },
   distance: {
     type: String,
-    required: true,
   },
   photos: {
     type: [String],
   },
   title: {
     type: String,
-    required: true,
   },
   desc: {
     type: String,
@@ -49,4 +47,4 @@ const HotelSchema = new mongoose.Schema({
   },
 });
 
-export default mongoose.model("Hotel", HotelSchema)
+export default mongoose.model("Hotel", HotelSchema);

@@ -18,13 +18,12 @@ const List = () => {
   const [max, setMax] = useState(undefined);
 
   const { data, loading, error, reFetch } = useFetch(
-    `/hotels?city=${destination}&min=${min || 0 }&max=${max || 999}`
+    `/hotels?city=${destination}&min=${min || 0}&max=${max || 999}` // added
   );
 
   const handleClick = () => {
     reFetch();
   };
-
   return (
     <div>
       <Navbar />
@@ -36,6 +35,10 @@ const List = () => {
             <div className="lsItem">
               <label>Destination</label>
               <input placeholder={destination} type="text" />
+            </div>
+            <div className="lsItem">
+              <label>Type</label>
+              <input placeholder={0} type="text" />
             </div>
             <div className="lsItem">
               <label>Check-in Date</label>

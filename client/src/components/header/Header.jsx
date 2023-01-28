@@ -17,6 +17,8 @@ import { useNavigate } from "react-router-dom";
 import { SearchContext } from "../../context/SearchContext";
 import { AuthContext } from "../../context/AuthContext";
 
+import { Link } from "react-router-dom";
+
 const Header = ({ type }) => {
   const [destination, setDestination] = useState("");
   const [openDate, setOpenDate] = useState(false);
@@ -65,32 +67,41 @@ const Header = ({ type }) => {
             <FontAwesomeIcon icon={faBed} />
             <span>Stays</span>
           </div>
-          <div className="headerListItem">
-            <FontAwesomeIcon icon={faPlane} />
-            <span>Flights</span>
-          </div>
-          <div className="headerListItem">
-            <FontAwesomeIcon icon={faCar} />
-            <span>Car rentals</span>
-          </div>
-          <div className="headerListItem">
-            <FontAwesomeIcon icon={faBed} />
-            <span>Attractions</span>
-          </div>
-          <div className="headerListItem">
-            <FontAwesomeIcon icon={faTaxi} />
-            <span>Airport taxis</span>
-          </div>
+          <span>
+            <Link
+              to="/restaurants"
+              className="navLink"
+              style={{ color: "inherit", textDecoration: "none" }}
+            >
+              Restaurants
+            </Link>
+          </span>
+          <span>
+            <Link
+              to="/sights"
+              className="navLink"
+              style={{ color: "inherit", textDecoration: "none" }}
+            >
+              Sights
+            </Link>
+          </span>
+
+          <span>
+            <Link
+              to="/transport"
+              className="navLink"
+              style={{ color: "inherit", textDecoration: "none" }}
+            >
+              Transport
+            </Link>
+          </span>
         </div>
         {type !== "list" && (
           <>
             <h1 className="headerTitle">
-              A lifetime of discounts? It's Genius.
+              We welcome you to be a part of an experience
             </h1>
-            <p className="headerDesc">
-              Get rewarded for your travels – unlock instant savings of 10% or
-              more with a free Lamabooking account
-            </p>
+            <p className="headerDesc">Here we serve Excellence</p>
             {!user && <button className="headerBtn">Sign in / Register</button>}
             <div className="headerSearch">
               <div className="headerSearchItem">

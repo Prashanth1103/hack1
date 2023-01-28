@@ -1,23 +1,57 @@
-.footer{
+.footer {
   width: 100%;
-  width: 1024px;
-  font-size: 12px;
+  max-width: 1024px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
-.fLists{
+.fLists {
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
 }
 
-.fList{
+.fList {
   list-style: none;
   padding: 0;
 }
 
-.fListItem{
+.fListItem {
   margin-bottom: 10px;
-  color: #003580;
+  color: #7caff6;
   cursor: pointer;
+  font-weight: 300;
+}
+
+.fListTitle {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.fListLink:hover {
+  text-decoration: underline;
+}
+
+.fSocial {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.fSocialLink {
+  color: #7eb0f6;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.fSocialLink:hover {
+  text-decoration: underline;
+}
+
+.fCopyright {
+  text-align: center;
+  margin-top: 20px;
 }
